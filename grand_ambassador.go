@@ -125,7 +125,7 @@ func main() {
 	if !*containerWait {
 		log.Warnf("-wait flag is deprecated and will not be used")
 	}
-	flag.Var(&n, "name", "Name/ID of container to ambassadorize")
+	flag.Var(&n, "container_name", "Name/ID of container to ambassadorize")
 
 	flag.Parse()
 	if len(n) == 0 {
